@@ -39,7 +39,9 @@ pip install -r requirements.txt
 
 ## Train and test
 At the root directory, run
+```bash
 python models/unet/train_unet.py
+```
 
 
 ## License

@@ -1,14 +1,8 @@
 # MRI reconstruction
 
 
-Accelerating Magnetic Resonance Imaging (MRI) by acquiring fewer measurements has the
-potential to reduce medical costs, minimize stress to patients and make MR imaging 
-possible in applications where it is currently prohibitively slow or expensive.
-
-[fastMRI](http://fastMRI.org) is collaborative research project from Facebook AI Research (FAIR)
-and NYU Langone Health to investigate the use of AI to make MRI scans faster.
-NYU Langone Health has released fully anonymized Knee MRI datasets that can
-be downloaded from [the fastMRI dataset page](https://fastmri.med.nyu.edu/).
+This code is created and modified based upon the collaborative research project from Facebook AI Research (FAIR)
+and NYU Langone Health. The code to their work is (https://github.com/facebookresearch/fastMRI).
 
 
 This repository contains convenient PyTorch data loaders, subsampling functions, evaluation

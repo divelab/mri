@@ -1,17 +1,16 @@
 # MRI reconstruction
 
-
-This code is created and modified based upon the collaborative research project from Facebook AI Research (FAIR)
-and NYU Langone Health. The code to their work is (https://github.com/facebookresearch/fastMRI).
-
+This is the code for our recent work that develops a new method for MRI reconstruction.
+The code is created and modified based upon the collaborative research project from Facebook AI Research (FAIR)
+and NYU Langone Health. The code to their work is at https://github.com/facebookresearch/fastMRI.
 
 This repository contains convenient PyTorch data loaders, subsampling functions, evaluation
-metrics, and reference implementations of simple baseline methods.
+metrics, and reference implementations of our methods for MRI reconstruction.
 
 
 ## Citing
-If you use the fastMRI data or this code in your research, please consider citing
-the fastMRI dataset paper:
+If you use this code in your research, please consider citing
+the original fastMRI dataset paper:
 ```
 @inproceedings{zbontar2018fastMRI,
   title={fastMRI: An Open Dataset and Benchmarks for Accelerated MRI},
@@ -22,6 +21,8 @@ the fastMRI dataset paper:
   year={2018}
 }
 ```
+Citing bibtex for our work will be avialable upon the publishing of our paper.
+
 
 ## Dependencies
 We have tested this code using:
@@ -36,29 +37,10 @@ You can find the full list of Python packages needed to run the code in the
 pip install -r requirements.txt
 ```
 
-## Directory Structure & Usage
-* `common`: Contains several utility functions and classes that can be used to
-create subsampling masks, evaluate results and create submission files.
-* `data`: Contains PyTorch data loaders for loading the fastMRI data and PyTorch
-data transforms useful for working with MRI data. See `data/README.md` for more
-information about using the data loaders.
-* `models`: Contains the baseline models.
+## Train and test
+At the root directory, run
+python models/unet/train_unet.py
 
-## Testing
-Run `pytest`.
-
-## Submitting to Leaderboard
-Run your model on the provided test data and create a zip file containing your
-predictions. Upload this to any publicly accessible cloud storage (e.g. Amazon
-S3, Dropbox etc) and then create a JSON file with your information.
-
-The `common/utils.py` file has some convenience functions to help with this:
-* `save_reconstructions` function saves the data in the correct
- format.
-* `create_submission_file` creates a JSON file for submission.
-
-Submit the JSON file on the
-[EvalAI page](https://evalai.cloudcv.org/web/challenges/challenge-page/153/overview).
 
 ## License
 fastMRI is MIT licensed, as found in the LICENSE file.

@@ -33,4 +33,4 @@ python models/unet/train_unet.py
 
 
 ## License
-fastMRI is MIT licensed, as found in the LICENSE file.
+The code is MIT licensed, as found in the LICENSE file.
